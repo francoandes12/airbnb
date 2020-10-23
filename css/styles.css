@@ -107,6 +107,7 @@ img {
   position: relative;
   display: flex;
   height: 4rem;
+  margin: 0;
 }
 form input[type='text'] {
   flex: 1;
@@ -114,9 +115,33 @@ form input[type='text'] {
   border-radius: 10px;
   background-image: url(../img/lupa.png);
   background-repeat: no-repeat;
-  background-position: calc(1% + 1rem) calc(1% + 0.8rem);
-  padding-left: 5rem;
-  font-size: 1.6rem;
+  background-position: 0 calc(1% + 0.8rem);
+  padding-left: 50px;
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  form input[type='text'] {
+    flex: 1;
+    border: none;
+    border-radius: 10px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(1% + 1rem) calc(1% + 0.8rem);
+    padding-left: 5rem;
+    font-size: 1.6rem;
+  }
+  form input[type='submit'] {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    padding: 0.7rem 2rem;
+    border: none;
+    background-color: var(--primario);
+    color: var(--claro);
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
 }
 form input[type='submit'] {
   position: absolute;
