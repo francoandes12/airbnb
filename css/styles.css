@@ -11,6 +11,11 @@
 html {
   box-sizing: border-box;
 }
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
 body {
   font-family: var(--fuente-principal);
 }
@@ -48,7 +53,7 @@ img {
 .btn-flotante {
   position: fixed;
   bottom: 1rem;
-  right: 1rem;
+  right: 0.5rem;
   background-color: var(--claro);
   padding: 0.5rem 2rem;
   text-decoration: none;
